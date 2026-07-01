@@ -1,0 +1,64 @@
+-- Insert trending products
+INSERT INTO products (name, description, price, original_price, category, images, benefits, ingredients, sizes, stock, featured, bestseller, trending, rating, review_count, sku) VALUES
+('Radiance Glow Serum', 'Transform your skin with our premium vitamin C serum that brightens and evens skin tone while reducing dark spots.', 299.00, 349.00, 'skincare', ARRAY['https://images.unsplash.com/photo-1620916566486-3c800c8e6b8e?w=600', 'https://images.unsplash.com/photo-1608248597276-f2b761aa3b5e?w=600'], ARRAY['Brightens skin tone', 'Reduces dark spots', 'Boosts collagen', 'Anti-aging properties'], 'Vitamin C, Hyaluronic Acid, Niacinamide, Vitamin E', ARRAY['30ml', '50ml'], 150, true, true, true, 4.8, 124, 'AG-SK-001'),
+('Deep Hydration Night Cream', 'Wake up to beautifully hydrated skin with our intensive overnight repair cream.', 249.00, 299.00, 'skincare', ARRAY['https://images.unsplash.com/photo-1611930022073-b7a4b97d8b8e?w=600'], ARRAY['Intense hydration', 'Repairs while you sleep', 'Reduces fine lines', 'Softens skin'], 'Shea Butter, Ceramides, Peptides, Squalane', ARRAY['50ml', '100ml'], 200, true, true, false, 4.9, 89, 'AG-SK-002'),
+('Velvet Matte Lipstick Set', 'Luxurious matte lipstick collection with 6 stunning shades for every occasion.', 189.00, 229.00, 'cosmetics', ARRAY['https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=600'], ARRAY['Long-lasting', 'Non-drying formula', 'Rich pigmentation', 'Cruelty-free'], 'Vitamin E, Jojoba Oil, Mango Butter', ARRAY['Set of 6'], 180, false, true, true, 4.7, 156, 'AG-CM-001'),
+('24K Gold Face Mask', 'Indulge in luxury with our 24K gold infused face mask for instant radiance.', 349.00, 449.00, 'skincare', ARRAY['https://images.unsplash.com/photo-1596755094514-f87e3f3c7e6e?w=600'], ARRAY['Instant glow', 'Tightens pores', 'Anti-inflammatory', 'Luxurious experience'], '24K Gold Particles, Collagen, Aloe Vera, Honey Extract', ARRAY['Single Use', 'Pack of 5'], 75, true, false, true, 4.6, 67, 'AG-SK-003'),
+('Crystal Elegance Perfume', 'A sophisticated fragrance blending Arabian oud with French roses.', 599.00, 749.00, 'cosmetics', ARRAY['https://images.unsplash.com/photo-1541643600914-78b08468360b?w=600'], ARRAY['Long-lasting fragrance', 'Premium ingredients', 'Unique blend', 'Elegant packaging'], 'Oud, Rose, Amber, Musk, Sandalwood', ARRAY['50ml', '100ml'], 120, true, true, true, 4.9, 203, 'AG-CM-002'),
+('Anti-Aging Retinol Cream', 'Advanced retinol formula that visibly reduces wrinkles and fine lines.', 329.00, 399.00, 'skincare', ARRAY['https://images.unsplash.com/photo-1617897479-gca8d05c8d8b?w=600'], ARRAY['Reduces wrinkles', 'Improves elasticity', 'Smooths texture', 'Firms skin'], 'Retinol, Bakuchiol, Hyaluronic Acid, Vitamin E', ARRAY['30ml', '50ml'], 95, false, true, false, 4.8, 178, 'AG-SK-004'),
+('Rose Gold Eyeshadow Palette', 'Stunning 12-shade palette with rose gold and bronze tones.', 159.00, 199.00, 'cosmetics', ARRAY['https://images.unsplash.com/photo-1512496027998-ft3738e7e0e5?w=600'], ARRAY['High pigmentation', 'Blends easily', 'Long wear', 'Versatile looks'], 'Mica, Titanium Dioxide, Iron Oxides', ARRAY['12 Shades'], 220, false, true, false, 4.7, 134, 'AG-CM-003'),
+('Silk Amino Acid Cleanser', 'Gentle daily cleanser that removes impurities without stripping moisture.', 149.00, 179.00, 'skincare', ARRAY['https://images.unsplash.com/photo-1556228720-195a25b5e57e?w=600'], ARRAY['Gentle cleansing', 'Maintains moisture', 'pH balanced', 'Suitable for sensitive skin'], 'Silk Amino Acids, Glycerin, Chamomile Extract', ARRAY['100ml', '200ml'], 300, false, true, false, 4.6, 98, 'AG-SK-005'),
+('Luxury False Lashes Set', 'Premium synthetic lashes for dramatic, glamorous eyes.', 79.00, 99.00, 'cosmetics', ARRAY['https://images.unsplash.com/photo-1631730486604-38e978a8dedf?w=600'], ARRAY['Natural look', 'Reusable', 'Easy application', 'Lightweight'], 'Premium Synthetic Fibers', ARRAY['Pair', 'Set of 3', 'Set of 5'], 400, false, true, false, 4.5, 87, 'AG-CM-004');
+
+-- Insert ladies fashion
+INSERT INTO products (name, description, price, original_price, category, images, benefits, sizes, colors, stock, featured, bestseller, trending, rating, review_count, sku) VALUES
+('Elegant Abaya - Black Gold', 'Stunning abaya with intricate gold embroidery and flowing silhouette.', 899.00, 1099.00, 'ladies', ARRAY['https://images.unsplash.com/photo-1583391733956-6c782764c7a4?w=600'], ARRAY['Premium fabric', 'Elegant design', 'Comfortable fit', 'Occasion wear'], ARRAY['S', 'M', 'L', 'XL', 'XXL'], ARRAY['Black', 'Navy'], 45, true, true, true, 4.9, 56, 'AG-LA-001'),
+('Silk Kaftan Dress', 'Luxurious silk kaftan perfect for special occasions.', 649.00, 799.00, 'ladies', ARRAY['https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600'], ARRAY['Pure silk', 'Handcrafted', 'Breathable', 'Elegant drape'], ARRAY['S', 'M', 'L', 'XL'], ARRAY['Burgundy', 'Emerald', 'Gold'], 60, true, false, false, 4.8, 43, 'AG-LA-002'),
+('Modern Modest Dress', 'Contemporary modest dress with modern cuts.', 399.00, 479.00, 'ladies', ARRAY['https://images.unsplash.com/photo-1515372039719-6739f0c7fae8?w=600'], ARRAY['Modern style', 'Comfortable', 'Versatile', 'Quality fabric'], ARRAY['XS', 'S', 'M', 'L', 'XL'], ARRAY['Dusty Pink', 'Sage', 'Black'], 85, false, true, false, 4.7, 38, 'AG-LA-003'),
+('Designer Hijab Collection', 'Premium jersey hijabs in elegant prints.', 129.00, 159.00, 'ladies', ARRAY['https://images.unsplash.com/photo-1590698933947-a202b069a861?w=600'], ARRAY['Stretchy fabric', 'Non-slip', 'Easy styling', 'Breathable'], ARRAY['One Size'], ARRAY['Navy', 'Burgundy', 'Black', 'Sage', 'Dusty Pink'], 200, false, true, false, 4.8, 92, 'AG-LA-004'),
+('Embroidered Evening Dress', 'Stunning evening dress with delicate beadwork.', 1199.00, 1499.00, 'ladies', ARRAY['https://images.unsplash.com/photo-1566174054880-8c4e6a3a2e7e?w=600'], ARRAY['Hand beaded', 'Premium fabric', 'Elegant fit', 'Special occasion'], ARRAY['S', 'M', 'L'], ARRAY['Champagne', 'Rose Gold'], 25, true, false, true, 4.9, 29, 'AG-LA-005');
+
+-- Insert gents fashion
+INSERT INTO products (name, description, price, original_price, category, images, benefits, sizes, colors, stock, featured, bestseller, trending, rating, review_count, sku) VALUES
+('Premium Kandura - White', 'Traditional Emirati kandura in pristine white with subtle embroidery.', 349.00, 429.00, 'gents', ARRAY['https://images.unsplash.com/photo-1507003211169-0a65dd86897c?w=600'], ARRAY['Premium fabric', 'Traditional style', 'Comfortable', 'Breathable'], ARRAY['S', 'M', 'L', 'XL', 'XXL'], ARRAY['White', 'Cream'], 80, true, true, false, 4.8, 67, 'AG-GE-001'),
+('Designer Bisht - Black Gold', 'Luxurious bisht with gold trim for special occasions.', 799.00, 999.00, 'gents', ARRAY['https://images.unsplash.com/photo-1617137969425-7cb74cd8f8de?w=600'], ARRAY['Premium wool blend', 'Gold embroidery', 'Traditional elegance', 'Lightweight'], ARRAY['M', 'L', 'XL'], ARRAY['Black', 'Brown'], 40, true, true, true, 4.9, 45, 'AG-GE-002'),
+('Modern Thobe Collection', 'Contemporary thobe with modern tailoring.', 299.00, 359.00, 'gents', ARRAY['https://images.unsplash.com/photo-1519085340753-4b2e8a0c8a5f?w=600'], ARRAY['Modern fit', 'Quality cotton', 'Versatile', 'Easy care'], ARRAY['S', 'M', 'L', 'XL', 'XXL'], ARRAY['White', 'Light Grey', 'Navy'], 120, false, true, false, 4.7, 58, 'AG-GE-003'),
+('Premium Ghutra Set', 'Traditional headwear set with elegant agal.', 129.00, 159.00, 'gents', ARRAY['https://images.unsplash.com/photo-1590698933947-a202b069a861?w=600'], ARRAY['Premium cotton', 'Traditional style', 'Breathable', 'Quality agal'], ARRAY['One Size'], ARRAY['White', 'Checkered'], 150, false, true, false, 4.6, 72, 'AG-GE-004'),
+('Tailored Shemagh', 'Premium Jordanian shemagh with elegant tassels.', 89.00, 119.00, 'gents', ARRAY['https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=600'], ARRAY['Premium cotton', 'Hand finished', 'Traditional pattern', 'Soft fabric'], ARRAY['One Size'], ARRAY['Red/White', 'Black/White'], 200, false, false, true, 4.5, 48, 'AG-GE-005');
+
+-- Insert shoes
+INSERT INTO products (name, description, price, original_price, category, images, benefits, sizes, colors, stock, featured, bestseller, trending, rating, review_count, sku) VALUES
+('Leather Sandals Premium', 'Handcrafted genuine leather sandals with elegant design.', 299.00, 379.00, 'shoes', ARRAY['https://images.unsplash.com/photo-1603487742131-4160ec999306?w=600'], ARRAY['Genuine leather', 'Handcrafted', 'Comfortable sole', 'Durable'], ARRAY['38', '39', '40', '41', '42', '43', '44', '45'], ARRAY['Brown', 'Black', 'Tan'], 100, true, true, false, 4.8, 89, 'AG-SH-001'),
+('Traditional Arabic Sandals', 'Classic Arabic sandals with premium finish.', 199.00, 249.00, 'shoes', ARRAY['https://images.unsplash.com/photo-1595950653106-73c8a78e8c03?w=600'], ARRAY['Traditional design', 'Quality leather', 'Lightweight', 'Versatile'], ARRAY['38', '39', '40', '41', '42', '43', '44'], ARRAY['Gold', 'Silver', 'Black'], 150, false, true, false, 4.7, 67, 'AG-SH-002'),
+('Designer Heels - Crystal', 'Stunning heels with crystal embellishments.', 599.00, 749.00, 'shoes', ARRAY['https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600'], ARRAY['Crystal details', 'Comfortable heel', 'Premium leather', 'Special occasion'], ARRAY['36', '37', '38', '39', '40'], ARRAY['Silver', 'Gold', 'Rose Gold'], 60, true, false, true, 4.9, 34, 'AG-SH-003'),
+('Comfort Loafers', 'Premium loafers for everyday elegance.', 349.00, 429.00, 'shoes', ARRAY['https://images.unsplash.com/photo-1614252369475-531eda8a4f62?w=600'], ARRAY['Suede leather', 'Cushioned sole', 'Versatile style', 'Easy slip-on'], ARRAY['39', '40', '41', '42', '43', '44', '45'], ARRAY['Navy', 'Beige', 'Black'], 90, false, true, false, 4.6, 56, 'AG-SH-004'),
+('Running Sneakers Luxe', 'Premium running sneakers with sleek design.', 429.00, 529.00, 'shoes', ARRAY['https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600'], ARRAY['Comfortable', 'Supportive', 'Breathable', 'Stylish'], ARRAY['38', '39', '40', '41', '42', '43', '44'], ARRAY['White/Gold', 'Black/Gold'], 80, false, false, true, 4.7, 42, 'AG-SH-005');
+
+-- Insert staff
+INSERT INTO staff (name, email, phone, referral_code, role, commission_rate, is_active) VALUES
+('Ahmed Al Rashid', 'ahmed@ag.ae', '+971501234567', 'AGAHMED', 'admin', 7.50, true),
+('Fatima Hassan', 'fatima@ag.ae', '+971502345678', 'AGFATIMA', 'sales', 5.00, true),
+('Omar Khalid', 'omar@ag.ae', '+971503456789', 'AGOMAR', 'sales', 5.00, true),
+('Layla Martinez', 'layla@ag.ae', '+971504567890', 'AGLAYLA', 'sales', 5.00, true),
+('Marcus Johnson', 'marcus@ag.ae', '+971505678901', 'AGMARCUS', 'manager', 6.00, true);
+
+-- Insert coupons
+INSERT INTO coupons (code, discount_type, discount_value, min_order_value, max_discount, usage_limit, is_active, expires_at) VALUES
+('WELCOME10', 'percentage', 10.00, 200.00, 50.00, NULL, true, '2027-12-31'),
+('FLASH20', 'percentage', 20.00, 300.00, 100.00, 100, true, '2026-07-31'),
+('FLAT50', 'fixed', 50.00, 400.00, NULL, 50, true, '2026-08-31'),
+('VIP15', 'percentage', 15.00, 500.00, 150.00, NULL, true, '2027-12-31');
+
+-- Insert sample reviews
+INSERT INTO reviews (product_id, customer_name, rating, title, comment, is_verified_purchase, is_approved) VALUES
+((SELECT id FROM products WHERE sku = 'AG-SK-001'), 'Sarah M.', 5, 'Amazing Results!', 'This serum has transformed my skin! After just 2 weeks, my dark spots have faded significantly. Highly recommend for anyone with uneven skin tone.', true, true),
+((SELECT id FROM products WHERE sku = 'AG-SK-001'), 'Fatima A.', 4, 'Great product', 'Love the texture and how it absorbs quickly. Seeing good results but took about a month to notice changes.', true, true),
+((SELECT id FROM products WHERE sku = 'AG-CM-002'), 'Mariam K.', 5, 'Divine fragrance', 'This perfume is absolutely gorgeous. Long lasting and unique. I receive compliments every time I wear it.', true, true),
+((SELECT id FROM products WHERE sku = 'AG-LA-001'), 'Noor H.', 5, 'Stunning abaya', 'The quality is exceptional. The gold embroidery is beautiful and the fit is perfect. Worth every dirham!', true, true),
+((SELECT id FROM products WHERE sku = 'AG-SH-003'), 'Dana R.', 5, 'Love these heels', 'So comfortable for heels! The crystals catch the light beautifully. Perfect for weddings.', true, true);
+
+-- Insert sample customers
+INSERT INTO customers (name, email, phone, whatsapp, address, city, emirate) VALUES
+('Aisha Al Maktoum', 'aisha@email.com', '+971501112223', '+971501112223', 'Villa 45, Palm Jumeirah', 'Dubai', 'Dubai'),
+('Khalid Abdullah', 'khalid@email.com', '+971503334445', '+971503334445', 'Apartment 12, Marina Tower', 'Abu Dhabi', 'Abu Dhabi'),
+('Layla Hassan', 'layla.h@email.com', '+971505556667', '+971505556667', 'Street 5, Al Nahyan', 'Sharjah', 'Sharjah');
